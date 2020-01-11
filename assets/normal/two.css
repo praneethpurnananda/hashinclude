@@ -1,0 +1,9 @@
+@media only screen and (max-width:900px){
+  .footer-logo img{
+    height: 50% !important;
+    width: 50% !important;
+  }
+  .content{
+    text-align: center !important;
+  }
+}
