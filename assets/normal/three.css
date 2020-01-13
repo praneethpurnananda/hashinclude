@@ -1,0 +1,13 @@
+#mybutton{
+  cursor: default !important;
+}
+
+#mybutton #mybt1{
+  background-color: black !important;
+  border: 1px solid black !important;
+}
+
+.pg1{
+  color:white !important;
+  background-color: black !important;
+}
