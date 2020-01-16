@@ -1,0 +1,261 @@
+html {
+background-image: url("full3.png") !important;
+background-size: cover !important;
+background-repeat:no-repeat !important;
+background-color:black !important;
+  text-align: center !important;
+  position:fixed !important;
+ font-family: 'Titillium Web', sans-serif !important;
+}
+
+body {
+  max-width: 1200px !important;
+  margin: 20px auto !important;
+  padding: 0 100px !important;
+  overflow-x: hidden !important;
+}
+.hash{
+
+left:50% !important;
+top:30% !important;
+}
+
+div, img, footer {
+  position: relative !important;
+  box-sizing: border-box !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 20px !important;
+  text-transform: uppercase !important;
+  font-family: 'Titillium Web', sans-serif !important;
+  font-weight: 300 !important;
+}
+
+h1 {
+  font-size: 36pt !important;
+}
+
+h2 {
+  font-size: 24pt !important;
+}
+
+h3 {
+  font-size: 18pt !important;
+}
+
+h4 {
+  font-size: 16pt !important;
+}
+
+h5 {
+  font-size: 14pt !important;
+}
+
+h6 {
+  font-size: 12pt !important;
+}
+
+p {
+  font-size: 12pt !important;
+  margin-bottom: 12pt !important;
+}
+
+strong {
+  font-weight: 900 !important;
+font-family: 'Titillium Web', sans-serif !important;
+  color: #e5e5e5 !important;
+}
+p1{
+font-family: 'Titillium Web', sans-serif !important;
+  color: #e5e5e5 !important;
+}
+
+a {
+  transition: color 0.25s ease-in-out !important;
+  text-transform: uppercase !important;
+  text-decoration: none !important;
+  color: #dff3fd !important;
+}
+a:visited {
+  color: #dff3fd !important;
+}
+
+
+.map-markers {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.map-marker {
+  position: fixed !important;
+}
+.map-marker:after {
+  animation-duration: 10s !important;
+  animation-iteration-count: infinite !important;
+  animation-name: pop !important;
+  border-radius: 50% !important;
+  border: 1px solid #ce606f !important;
+  content: '' !important;
+  height: 2em !important;
+  margin: -.5em 0 0 -.5em !important;
+  left: 0 !important;
+  opacity: 0 !important;
+  position: absolute !important;
+  top: 0 !important;
+  width: 2em !important;
+}
+
+.map-marker a {
+  background-color: #ce606f !important;
+  border-radius: 50% !important;
+  height: 1em !important;
+  display: block !important;
+  text-indent: -9999px !important;
+  width: 1em !important;
+}
+.map-marker-tech {
+  left: 50% !important;
+  top: 33% !important;
+}
+
+.map-marker-nontech {
+  left: 57% !important;
+  top: 56% !important;
+}
+
+.map-marker-esports {
+  left: 30% !important;
+  top: 57% !important;
+}
+.map-marker-paper {
+  position:fixed !important;
+  left: 20% !important;
+  top: 80% !important;
+}
+.map-marker-poster {
+  left: 43% !important;
+  top: 94% !important;
+}
+
+
+.map-marker-info {
+  display:block !important;
+  left: 50% !important;
+  position: absolute !important;
+  bottom: 0 !important;
+  transform: translate(-50%, -2em) !important;
+  width: 17em !important;
+  z-index: 999 !important;
+}
+.map-marker-info header {
+  background-color: #2CA6D1 !important;
+  border-radius: .5em .5em 0 0 !important;
+  color: #fff !important;
+  padding: .5em 1em !important;
+}
+.map-marker-info main {
+  background-color: #fff !important;
+  border-radius: 0 0 .5em .5em !important;
+  color: #7e7e7e !important;
+  padding: .5em 1em !important;
+}
+.map-marker-info h2 {
+  margin-bottom: 0 !important;
+}
+.map-marker-info-inner {
+  border-radius: .5em !important;
+  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.3) !important;
+  font-size: .875em !important;
+}
+.map-marker-info-inner:after {
+  border-left: .75em solid transparent !important;
+  border-right: .75em solid transparent !important;
+  border-top: 1em solid #fff !important;
+  content: '' !important;
+  height: 0 !important;
+  left: 50% !important;
+  position: absolute !important;
+  top: 100% !important;
+  transform: translateX(-50%) !important;
+  width: 0 !important;
+}
+
+
+@media only screen and (max-width: 990px){
+
+html{
+  background-image: url("https://www.solidbackgrounds.com/images/950x350/950x350-black-solid-color-background.jpg") !important;
+  overflow-y: scroll !important;
+  height: auto !important;
+}
+body{
+  overflow-y: scroll !important;
+  height: auto !important;
+}
+.hash{
+  display: none !important;
+}
+.map-markers{
+  display: block !important;
+  position: relative !important;
+  left: 0 !important;
+  right: 0 !important;
+  clear: both !important;
+}
+.map-marker-tech{
+  left:0 !important;
+  right: 0 !important;
+  clear: both !important;
+  text-align: center !important;
+  display: block !important;
+  height: auto !important;
+  width: auto !important;
+
+}
+.map-marker-nontech{
+  left:0 !important;
+  right: 0 !important;
+  clear: both !important;
+  text-align: center !important;
+  display: block !important;
+  height: auto !important;
+  width: auto !important;
+}
+.map-marker-esports{
+  left:0 !important;
+  right: 0 !important;
+  margin-top: 30% !important;
+  clear: both !important;
+  text-align: center !important;
+  display: block !important;
+  height: auto !important;
+  width: auto !important;
+}
+.map-marker-paper{
+  left:0 !important;
+  right: 0 !important;
+  margin-top: 30% !important;
+  clear: both !important;
+  text-align: center !important;
+  display: block !important;
+  height: auto !important;
+  width: auto !important;
+}
+.map-marker-poster{
+  left:0 !important;
+  right: 0 !important;
+  margin-top: 45% !important;
+  clear: both !important;
+  text-align: center !important;
+  display: block !important;
+  height: auto !important;
+  width: auto !important;
+}
+.m-card{
+  margin-bottom: 15% !important;
+  top:0 !important;
+  left: 0 !important;
+  right: 0 !important;
+}
+}
