@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="assets/normal/one.css">
   <link rel="stylesheet" href="assets/normal/two.css">
   <link rel="stylesheet" href="assets/normal/eve.css">
+  <link rel="stylesheet" href="assets/normal/stylecard.css">
 
 
 <style media="screen">
@@ -40,6 +41,36 @@ body{
   .text_content{
     margin-top:25% !important;
   }
+}
+*{
+    box-sizing: border-box;
+}
+
+.column{
+    float:  left !important;
+    width: 25% !important;
+    padding: 0 10px !important;
+}
+
+.row{
+    margin: 0 -5px !important;
+}
+
+.row:after {
+    content: "" !important;
+    display: table !important;
+    clear:  both !important;
+}
+
+
+@media screen and (max-width: 600px){
+
+    .column{
+        width: 100% !important;
+        display: block !important;
+        margin-bottom: 20px !important;
+    }
+
 }
 </style>
 
@@ -113,168 +144,212 @@ body{
     </nav>
 </section>
 
+<br><br><br><br>
+<div class="row">
+    <div class="column">
+        <div id="make-3D-space">
+            <div id="product-card" class="p1">
+                <div id="product-front">
+                    <div class="shadow"></div>
+                    <img src="https://images.unsplash.com/photo-1553805450-4c0927a658c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" />
+                    <div class="image_overlay"></div>
+                    <div class="stats">
+                        <div class="stats-container" style="overflow: auto;">
+                            <span class="product_name">Workshop Name </span>
+                            <p>05/02/2020  9:50AM</p>
 
-<div class="text_content">
-<h3>#include&lt;NON-TECHNICAL EVENTS.H&gt;</h3>
-</div>
-<section class="content_page">
-  <div class="" style="visibility:hidden">
-
-
-    <h1>hello
-    </h1>
-  </div>
-  <!---->
-  <div class="row">
-  <div class="column">
-
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqpyokEFxrBxoWqSokOv8vkjrL7-hM42tE6sWUViNJhNbm3YlJ&s" alt="Avatar" style="width:350px;height:400px;">
-          </div>
-          <div class="flip-card-back">
-          <h3><i class="fa fa-bookmark"></i>&nbsp;&nbsp;&nbsp;Title : CODING</h3>
-        <h3><i class="fa fa-location-arrow"></i>&nbsp;&nbsp;&nbsp;Venue : C-Block</h3>
-          <h3><i class="fa fa-calendar"></i>&nbsp;&nbsp;&nbsp;Date : 22/2/19</h3>
-          <h3><i class="fa fa-clock-o"></i>&nbsp;&nbsp;&nbsp;Time : 9:00</h3>
-          <h3><i class="fa fa-user"></i>&nbsp;&nbsp;&nbsp;Strength : 30</h3>
-          </div>
+                            <div class="product-options">
+                            <strong>Conducted By</strong>
+                            <span>Name</span>
+                            <strong>Venue</strong>
+                            <span>C-Block</span>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-
-  </div>
-
-  <div class="column">
-
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqpyokEFxrBxoWqSokOv8vkjrL7-hM42tE6sWUViNJhNbm3YlJ&s" alt="Avatar" style="width:350px;height:400px;">
-          </div>
-          <div class="flip-card-back">
-            <h3><i class="fa fa-bookmark"></i>&nbsp;&nbsp;&nbsp;Title : CODING</h3>
-          <h3><i class="fa fa-location-arrow"></i>&nbsp;&nbsp;&nbsp;Venue : C-Block</h3>
-            <h3><i class="fa fa-calendar"></i>&nbsp;&nbsp;&nbsp;Date : 22/2/19</h3>
-            <h3><i class="fa fa-clock-o"></i>&nbsp;&nbsp;&nbsp;Time : 9:00</h3>
-            <h3><i class="fa fa-user"></i>&nbsp;&nbsp;&nbsp;Strength : 30</h3>
-          </div>
-        </div>
-      </div>
-
-  </div>
-
-  <div class="column">
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqpyokEFxrBxoWqSokOv8vkjrL7-hM42tE6sWUViNJhNbm3YlJ&s" alt="Avatar" style="width:350px;height:400px;">
-        </div>
-        <div class="flip-card-back">
-          <h3><i class="fa fa-bookmark"></i>&nbsp;&nbsp;&nbsp;Title : CODING</h3>
-        <h3><i class="fa fa-location-arrow"></i>&nbsp;&nbsp;&nbsp;Venue : C-Block</h3>
-          <h3><i class="fa fa-calendar"></i>&nbsp;&nbsp;&nbsp;Date : 22/2/19</h3>
-          <h3><i class="fa fa-clock-o"></i>&nbsp;&nbsp;&nbsp;Time : 9:00</h3>
-          <h3><i class="fa fa-user"></i>&nbsp;&nbsp;&nbsp;Strength : 30</h3>
-        </div>
-      </div>
     </div>
-  </div>
+    <div class="column">
+        <div id="make-3D-space">
+            <div id="product-card" class="p1">
+                <div id="product-front">
+                    <div class="shadow"></div>
+                    <img src="https://images.unsplash.com/photo-1553805450-4c0927a658c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" />
+                    <div class="image_overlay"></div>
+                    <div class="stats">
+                        <div class="stats-container" style="overflow: auto;">
+                            <span class="product_name">Workshop Name </span>
+                            <p>05/02/2020  9:50AM</p>
 
-  <div class="column">
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqpyokEFxrBxoWqSokOv8vkjrL7-hM42tE6sWUViNJhNbm3YlJ&s" alt="Avatar" style="width:350px;height:400px;">
+                            <div class="product-options">
+                            <strong>Conducted By</strong>
+                            <span>Name</span>
+                            <strong>Venue</strong>
+                            <span>C-Block</span>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="flip-card-back">
-          <h3><i class="fa fa-bookmark"></i>&nbsp;&nbsp;&nbsp;Title : CODING</h3>
-        <h3><i class="fa fa-location-arrow"></i>&nbsp;&nbsp;&nbsp;Venue : C-Block</h3>
-          <h3><i class="fa fa-calendar"></i>&nbsp;&nbsp;&nbsp;Date : 22/2/19</h3>
-          <h3><i class="fa fa-clock-o"></i>&nbsp;&nbsp;&nbsp;Time : 9:00</h3>
-          <h3><i class="fa fa-user"></i>&nbsp;&nbsp;&nbsp;Strength : 30</h3>
-        </div>
-      </div>
     </div>
-  </div>
-</div>
+    <div class="column">
+        <div id="make-3D-space">
+            <div id="product-card" class="p1">
+                <div id="product-front">
+                    <div class="shadow"></div>
+                    <img src="https://images.unsplash.com/photo-1553805450-4c0927a658c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" />
+                    <div class="image_overlay"></div>
+                    <div class="stats">
+                        <div class="stats-container" style="overflow: auto;">
+                            <span class="product_name">Workshop Name </span>
+                            <p>05/02/2020  9:50AM</p>
 
-<br><br><br>
+                            <div class="product-options">
+                            <strong>Conducted By</strong>
+                            <span>Name</span>
+                            <strong>Venue</strong>
+                            <span>C-Block</span>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div id="make-3D-space">
+            <div id="product-card" class="p1">
+                <div id="product-front">
+                    <div class="shadow"></div>
+                    <img src="https://images.unsplash.com/photo-1553805450-4c0927a658c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" />
+                    <div class="image_overlay"></div>
+                    <div class="stats">
+                        <div class="stats-container" style="overflow: auto;">
+                            <span class="product_name">Workshop Name </span>
+                            <p>05/02/2020  9:50AM</p>
+
+                            <div class="product-options">
+                            <strong>Conducted By</strong>
+                            <span>Name</span>
+                            <strong>Venue</strong>
+                            <span>C-Block</span>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="row">
-<div class="column">
+    <div class="column">
+        <div id="make-3D-space">
+            <div id="product-card" class="p1">
+                <div id="product-front">
+                    <div class="shadow"></div>
+                    <img src="https://images.unsplash.com/photo-1553805450-4c0927a658c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" />
+                    <div class="image_overlay"></div>
+                    <div class="stats">
+                        <div class="stats-container" style="overflow: auto;">
+                            <span class="product_name">Workshop Name </span>
+                            <p>05/02/2020  9:50AM</p>
 
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqpyokEFxrBxoWqSokOv8vkjrL7-hM42tE6sWUViNJhNbm3YlJ&s" alt="Avatar" style="width:350px;height:400px;">
+                            <div class="product-options">
+                            <strong>Conducted By</strong>
+                            <span>Name</span>
+                            <strong>Venue</strong>
+                            <span>C-Block</span>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="flip-card-back">
-          <h3><i class="fa fa-bookmark"></i>&nbsp;&nbsp;&nbsp;Title : CODING</h3>
-        <h3><i class="fa fa-location-arrow"></i>&nbsp;&nbsp;&nbsp;Venue : C-Block</h3>
-          <h3><i class="fa fa-calendar"></i>&nbsp;&nbsp;&nbsp;Date : 22/2/19</h3>
-          <h3><i class="fa fa-clock-o"></i>&nbsp;&nbsp;&nbsp;Time : 9:00</h3>
-          <h3><i class="fa fa-user"></i>&nbsp;&nbsp;&nbsp;Strength : 30</h3>
+    </div>
+    <div class="column">
+        <div id="make-3D-space">
+            <div id="product-card" class="p1">
+                <div id="product-front">
+                    <div class="shadow"></div>
+                    <img src="https://images.unsplash.com/photo-1553805450-4c0927a658c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" />
+                    <div class="image_overlay"></div>
+                    <div class="stats">
+                        <div class="stats-container" style="overflow: auto;">
+                            <span class="product_name">Workshop Name </span>
+                            <p>05/02/2020  9:50AM</p>
+
+                            <div class="product-options">
+                            <strong>Conducted By</strong>
+                            <span>Name</span>
+                            <strong>Venue</strong>
+                            <span>C-Block</span>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
+    <div class="column">
+        <div id="make-3D-space">
+            <div id="product-card" class="p1">
+                <div id="product-front">
+                    <div class="shadow"></div>
+                    <img src="https://images.unsplash.com/photo-1553805450-4c0927a658c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" />
+                    <div class="image_overlay"></div>
+                    <div class="stats">
+                        <div class="stats-container" style="overflow: auto;">
+                            <span class="product_name">Workshop Name </span>
+                            <p>05/02/2020  9:50AM</p>
 
-</div>
-
-<div class="column">
-
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqpyokEFxrBxoWqSokOv8vkjrL7-hM42tE6sWUViNJhNbm3YlJ&s" alt="Avatar" style="width:350px;height:400px;">
+                            <div class="product-options">
+                            <strong>Conducted By</strong>
+                            <span>Name</span>
+                            <strong>Venue</strong>
+                            <span>C-Block</span>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="flip-card-back">
-          <h3><i class="fa fa-bookmark"></i>&nbsp;&nbsp;&nbsp;Title : CODING</h3>
-        <h3><i class="fa fa-location-arrow"></i>&nbsp;&nbsp;&nbsp;Venue : C-Block</h3>
-          <h3><i class="fa fa-calendar"></i>&nbsp;&nbsp;&nbsp;Date : 22/2/19</h3>
-          <h3><i class="fa fa-clock-o"></i>&nbsp;&nbsp;&nbsp;Time : 9:00</h3>
-          <h3><i class="fa fa-user"></i>&nbsp;&nbsp;&nbsp;Strength : 30</h3>
+    </div>
+    <div class="column">
+        <div id="make-3D-space">
+            <div id="product-card" class="p1">
+                <div id="product-front">
+                    <div class="shadow"></div>
+                    <img src="https://images.unsplash.com/photo-1553805450-4c0927a658c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" />
+                    <div class="image_overlay"></div>
+                    <div class="stats">
+                        <div class="stats-container" style="overflow: auto;">
+                            <span class="product_name">Workshop Name </span>
+                            <p>05/02/2020  9:50AM</p>
+
+                            <div class="product-options">
+                            <strong>Conducted By</strong>
+                            <span>Name</span>
+                            <strong>Venue</strong>
+                            <span>C-Block</span>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-
 </div>
-
-<div class="column">
-  <div class="flip-card">
-    <div class="flip-card-inner">
-      <div class="flip-card-front">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqpyokEFxrBxoWqSokOv8vkjrL7-hM42tE6sWUViNJhNbm3YlJ&s" alt="Avatar" style="width:350px;height:400px;">
-      </div>
-      <div class="flip-card-back">
-        <h3><i class="fa fa-bookmark"></i>&nbsp;&nbsp;&nbsp;Title : CODING</h3>
-      <h3><i class="fa fa-location-arrow"></i>&nbsp;&nbsp;&nbsp;Venue : C-Block</h3>
-        <h3><i class="fa fa-calendar"></i>&nbsp;&nbsp;&nbsp;Date : 22/2/19</h3>
-        <h3><i class="fa fa-clock-o"></i>&nbsp;&nbsp;&nbsp;Time : 9:00</h3>
-        <h3><i class="fa fa-user"></i>&nbsp;&nbsp;&nbsp;Strength : 30</h3>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="column">
-  <div class="flip-card">
-    <div class="flip-card-inner">
-      <div class="flip-card-front">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqpyokEFxrBxoWqSokOv8vkjrL7-hM42tE6sWUViNJhNbm3YlJ&s" alt="Avatar" style="width:350px;height:400px;">
-      </div>
-      <div class="flip-card-back">
-        <h3><i class="fa fa-bookmark"></i>&nbsp;&nbsp;&nbsp;Title : CODING</h3>
-      <h3><i class="fa fa-location-arrow"></i>&nbsp;&nbsp;&nbsp;Venue : C-Block</h3>
-        <h3><i class="fa fa-calendar"></i>&nbsp;&nbsp;&nbsp;Date : 22/2/19</h3>
-        <h3><i class="fa fa-clock-o"></i>&nbsp;&nbsp;&nbsp;Time : 9:00</h3>
-        <h3><i class="fa fa-user"></i>&nbsp;&nbsp;&nbsp;Strength : 30</h3>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-</section>
 
 <br><br><br>
 <!--footer-->
@@ -452,6 +527,7 @@ R&D Block, 6th Floor-601, KL University, Guntur, AndhraPradesh
 </div>
 <!-- footer -->
 <!--footer-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="assets/web/assets/jquery/jquery.min.js"></script>
   <script src="assets/popper/popper.min.js"></script>
   <script src="assets/tether/tether.min.js"></script>
@@ -472,6 +548,7 @@ R&D Block, 6th Floor-601, KL University, Guntur, AndhraPradesh
   <script src="assets/slidervideo/script.js"></script>
   <script src="assets/gallery/player.min.js"></script>
   <script src="assets/gallery/script.js"></script>
+  <script  src="assets/normal/scriptcard.js"></script>
 
 
 
