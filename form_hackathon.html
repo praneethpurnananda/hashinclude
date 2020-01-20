@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/toplogo.png" type="image/x-icon">
+  <title>Create an account | #include</title>
+  <link rel='stylesheet' href='https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="./assets/normal/stylesignin.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="wrapper">
+  <form  class="form-signin" method="post" action="/hackathon" enctype="multipart/form-data">
+        <h2 class="form-signin-heading" style="text-align:center !important">#INCLUDE</h2>
+        {% if errors %}
+      {% for error in errors %}
+            <p class="alert alert-danger">{{ error }}</p>
+      {% endfor %}
+  {% endif %}
+        <input type="text" class="form-control" name="teamName" placeholder="Enter team name"> <br>
+         <input type="text" class="form-control" name="domainName" placeholder="Domain name"> <br>
+          <input type="text" class="form-control" name="problemName" placeholder="Enter problem name"> <br>
+        <input type="email" class="form-control" name="email1" placeholder="team mate 1 email"  autofocus="" ><br>
+        <input type="email" class="form-control" name="email2" placeholder="team mate 2 email"  autofocus="" ><br>
+        <input type="email" class="form-control" name="email3" placeholder="team mate 3 email"  autofocus="" ><br>
+        <input type="email" class="form-control" name="email4" placeholder="team mate 4 email(optional)"  autofocus="" ><br>
+        <input type="email" class="form-control" name="email5" placeholder="team mate 5 email(optional)"  autofocus="" ><br>
+        <input type="email" class="form-control" name="email6" placeholder="team mate 6 email(optional)"  autofocus="" ><br>
+
+            <div class="custom-file">
+        <input style="text-align:center" type="file" class="custom-file-input" name="HackathonAbstract" id="customFile">
+        <label class="custom-file-label" for="customFile">Choose file</label>
+      </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+        <br>
+        <h5>Don't have an account?</h5>
+        <a href="/users/registration">Register here</a>
+      </form>
+  </div>
+<!-- partial -->
+
+</body>
+</html>
