@@ -96,6 +96,16 @@ body {
   margin: 0 12.5px;
 }
 
+.pre_team{
+  text-align: center;
+}
+
+@media only screen and (max-width: 1000px){
+  .footer-logo img{
+    height: 50%;
+    width: 50%;
+  }
+}
 @media (max-width: 550px) {
   .honeycomb-cell {
     margin: 81.25px 25px;
